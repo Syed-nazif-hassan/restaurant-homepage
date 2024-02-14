@@ -6,32 +6,33 @@ const navbar_signup_login = ["Signup", "Login"];
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between mx-3 my-2">
-      <h1 className="text-4xl font-['Rosrivo]']">BistroVerve</h1>
-      <div className="flex space-x-10 max-[900px]:space-x-6 max-[833px]:hidden">
-        {navbar_items.map((item) => (
-          <Link
-            className="hover:text-amber-800 hover:underline underline-offset-8 decoration-2 decoration-amber-800"
-            href="#"
-          >
-            {item}
-          </Link>
-        ))}
-        {/* <Link href="#">Menu</Link>
-        <Link href="#">Online Order</Link>
-        <Link href="#">Reservation</Link>
-        <Link href="#">About us</Link> */}
+    <div className="fixed left-0 right-0 top-0 bg-lime-50 shadow">
+      <div className="mx-3 mb-10 mt-2 flex justify-between">
+        <h1 className="font-['Rosrivo]'] text-4xl">BistroVerve</h1>
+        <div className="mt-2 flex space-x-10 max-[900px]:space-x-6 max-[833px]:hidden">
+          {navbar_items.map((item, index) => (
+            <Link
+              key={index}
+              className="decoration-amber-800 decoration-2 underline-offset-8 hover:text-amber-800 hover:underline"
+              href="#"
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
+        <div className="mr-3 mt-2 flex  space-x-4 max-[900px]:space-x-3 max-[833px]:hidden">
+          {navbar_signup_login.map((item, index) => (
+            <Link
+              key={index}
+              href="#"
+              className="decoration-amber-800 decoration-2 underline-offset-8 hover:text-amber-800 hover:underline"
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
+        <Dropdown />
       </div>
-      <div className="flex space-x-4 mr-3  max-[900px]:space-x-3 max-[833px]:hidden">
-        {navbar_signup_login.map((item) => (
-          <Link href="#" className="hover:text-amber-800 hover:underline underline-offset-8 decoration-2 decoration-amber-800">
-            {item}
-          </Link>
-        ))}
-        {/* <Link href="#">Signup</Link>
-        <Link href="#">Login</Link> */}
-      </div>
-      <Dropdown />
     </div>
   );
 }

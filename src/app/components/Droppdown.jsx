@@ -11,10 +11,10 @@ export default function Dropdown() {
   return (
     <Menu
       as="div"
-      className="relative text-left hidden max-[833px]:inline-block"
+      className="relative hidden text-left max-[833px]:inline-block"
     >
       <div>
-        <Menu.Button className="inline-flex px-1 py-1 bg-lime-50">
+        <Menu.Button className="inline-flex bg-lime-50 px-1 py-1">
           <GiHamburgerMenu
             className="-mr-1 h-7 w-7 text-amber-800"
             aria-hidden="true"
@@ -31,7 +31,7 @@ export default function Dropdown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none font-medium">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y rounded-md bg-white font-medium shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
@@ -39,7 +39,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   Signup
@@ -52,7 +52,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   Login
@@ -67,7 +67,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   Menu
@@ -80,7 +80,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   Order Online
@@ -93,7 +93,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   Reservation
@@ -108,7 +108,7 @@ export default function Dropdown() {
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm hover:text-amber-800"
+                    "block px-4 py-2 text-sm hover:text-amber-800",
                   )}
                 >
                   About us

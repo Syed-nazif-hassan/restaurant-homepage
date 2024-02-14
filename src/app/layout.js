@@ -1,4 +1,4 @@
-import { Lato, Open_Sans} from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const open_sans = Open_Sans({ subsets: ["latin"], weight: "400" });
