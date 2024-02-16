@@ -6,9 +6,9 @@ const navbar_signup_login = ["Signup", "Login"];
 
 export default function NavBar() {
   return (
-    <div className="fixed left-0 right-0 top-0 bg-lime-50 shadow">
+    <div className="fixed left-0 right-0 top-0 z-10 bg-lime-50 shadow">
       <div className="mx-3 mb-10 mt-2 flex justify-between">
-        <h1 className="font-['Rosrivo]'] text-4xl">BistroVerve</h1>
+        <h1 className="font-['Faustina'] text-4xl">BistroVerve</h1>
         <div className="mt-2 flex space-x-10 max-[900px]:space-x-6 max-[833px]:hidden">
           {navbar_items.map((item, index) => (
             <Link
