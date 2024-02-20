@@ -10,8 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${open_sans.className} bg-lime-50`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${open_sans.className} bg-lime-50 selection:bg-gray-400`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
