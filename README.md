@@ -1,6 +1,6 @@
 # Restaurant Home Page Using Next.js And Tailwind CSS.
 
-## This project is a simple, responsive restaurant home page designed for various screen sizes, created using Next.js and Tailwind CSS.
+## This project is a responsive restaurant homepage, optimized for various screen sizes, and developed using Next.js and Tailwind CSS.
 
 ### To run this project locally-
 
